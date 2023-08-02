@@ -1,1 +1,0 @@
-txt = list(input())
