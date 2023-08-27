@@ -15,7 +15,7 @@ while True:
             for char in cur_passing_whole_car:
                 cur_passing_car.append(char)
             while cur_passing_car:
-                ....
+                pass
 
 
     elif cmd == "End":
