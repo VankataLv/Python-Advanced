@@ -14,10 +14,6 @@ for row in range(1, rows + 1):
 odd_sum = sum(odd)
 even_sum = sum(even)
 if odd_sum > even_sum:
-    z = odd.symmetric_difference_update(even)
-    print(f'{", ".join([str(el) for el in z])}')
-elif odd_sum < even_sum:
-    z = odd.symmetric_difference(even)
-    print(f'{", ".join([str(el) for el in z])}')
+    print(*odd.difference(even), sep=", ")
 else:
-    print(f'{odd}')
+    print(*odd.symmetric_difference(even), sep=", ")
