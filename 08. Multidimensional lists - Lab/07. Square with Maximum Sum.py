@@ -9,7 +9,7 @@ for _ in range(max_rows):
 
 for row_ind in range(max_rows - 1): # 0, 1, 2
     for col_ind in range(max_columns): # 0, 1, 2, 3, 4, 5
-        cur_sum_values = []
+        cur_sum_values.clear()
         cur_sum_values.append(matrix[row_ind][col_ind])
         if col_ind == max_columns - 1:
             break
