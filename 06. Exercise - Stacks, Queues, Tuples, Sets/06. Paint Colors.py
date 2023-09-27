@@ -1,4 +1,4 @@
-solution by Diyan Kalaydzhiev
+# solution by Diyan Kalaydzhiev
 from collections import deque
 
 words = deque(input().split())  # d yel blu e low redd

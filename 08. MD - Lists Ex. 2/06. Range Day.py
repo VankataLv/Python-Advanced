@@ -72,7 +72,7 @@ for _ in range(int(input())):
                     tgts_hit.append([cur_player_pos["row"], sqr])
                     break
 
-[print(*row) for row in matrix] # for DEBUG only!
+# [print(*row) for row in matrix] # for DEBUG only!
 if tgts_coords:
     print(f"Training not completed! {len(tgts_coords)} targets left.")
 else:
