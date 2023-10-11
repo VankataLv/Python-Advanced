@@ -20,7 +20,7 @@ while True:
 
     elif cmd == "End":
         break
-    else:                          # cmd is a car
+    else:                          # line is a car
         q_cars_waiting.append(cmd)
 
 if not crash:

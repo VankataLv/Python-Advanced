@@ -32,10 +32,10 @@ while email != "End":
         raise MoreThanOneAtSymbolError("Valid email contains only one @ symbol!")
     if len(email.split("@")[0]) < MIN_LENGTH_NAME_MAIL:
         raise NameTooShortError("Name must be more than 4 characters!")
-    if findall(pattern_name, email)[0] != email.split("@")[0]:  # [name; domain_name; domain]
-        raise InvalidNameError("Name may contain only letters, digits and underscores!")
     if "@" not in email:
         raise MoreThanOneAtSymbolError("Email must contain @ symbol")
+    if findall(pattern_name, email)[0] != email.split("@")[0]:  # [name; domain_name; domain]
+        raise InvalidNameError("Name may contain only letters, digits and underscores!")
     if findall(pattern_domain, email)[-1] not in VALID_DOMAINS:
         raise InvalidDomainError("Domain must be one of the following: .com, .bg, .org, .net")
     print("Email is valid")

@@ -29,7 +29,7 @@ while user_cmd != "End":
     # try:
     #     with open("file.txt", "r") as f:
     #         cur_cmd_counter += 1
-    #         print(f"- After cmd#:{cur_cmd_counter} | current state of file is: \n{f.read()} ")
+    #         print(f"- After line#:{cur_cmd_counter} | current state of file is: \n{f.read()} ")
     # except FileNotFoundError:
     #     print("File named->'file.txt', does not exist")
     user_cmd = input()
