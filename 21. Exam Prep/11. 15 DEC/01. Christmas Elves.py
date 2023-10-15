@@ -1,4 +1,4 @@
-# Judge 69/100
+# Judge 76/100
 from collections import deque
 
 elf_energies = deque([int(el) for el in input().split()])
@@ -15,7 +15,16 @@ while elf_energies and materials_in_box:
             cur_elf = elf_energies.popleft()
     cur_box = materials_in_box.pop()
     counter += 1
-    if counter % 3 == 0:
+    if counter % 3 == 0 and counter % 5 == 0:
+        if cur_elf >= cur_box * 2:
+            total_energy_used += cur_box * 2
+            cur_elf -= cur_box * 2
+            elf_energies.append(cur_elf)
+        else:
+            cur_elf *= 2
+            materials_in_box.append(cur_box)
+            elf_energies.append(cur_elf)
+    elif counter % 3 == 0:
         if cur_elf >= cur_box * 2:
             total_energy_used += cur_box * 2
             cur_elf -= cur_box * 2
